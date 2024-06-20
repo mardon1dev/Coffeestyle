@@ -244,11 +244,13 @@ body {
   margin-top: 100px;
 }
 
-.featured {
+.featured,
+.products {
   width: 100%;
   text-align: center;
 }
-.featured__span {
+.featured__span,
+.products__span {
   display: inline-block;
   font-size: 12px;
   font-weight: 400;
@@ -258,7 +260,9 @@ body {
   text-transform: uppercase;
   position: relative;
 }
-.featured__span::after, .featured__span::before {
+.featured__span::after, .featured__span::before,
+.products__span::after,
+.products__span::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -266,35 +270,42 @@ body {
   background-color: rgb(236, 236, 237);
   top: 50%;
 }
-.featured__span::before {
+.featured__span::before,
+.products__span::before {
   left: -45px;
 }
-.featured__span::after {
+.featured__span::after,
+.products__span::after {
   right: -45px;
 }
 
-.mugs {
+.mugs,
+.cups {
   margin-top: 100px;
   display: flex;
   gap: 20px;
 }
-.mugs__cup {
+.mugs__cup,
+.cups__cup {
   padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.mugs__cup--img {
+.mugs__cup--img,
+.cups__cup--img {
   width: 100%;
 }
-.mugs__cup--name {
+.mugs__cup--name,
+.cups__cup--name {
   margin-top: 35px;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   color: rgb(29, 31, 46);
 }
-.mugs__cup--price {
+.mugs__cup--price,
+.cups__cup--price {
   color: rgba(29, 31, 46, 0.7);
   font-size: 16px;
   line-height: 28px;
@@ -306,4 +317,14 @@ body {
 }
 .newprice__oldprice {
   text-decoration: line-through;
+  color: rgba(29, 31, 46, 0.4);
+}
+
+#products {
+  margin-top: 100px;
+}
+
+.cups {
+  gap: 17px;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=main.css.map */

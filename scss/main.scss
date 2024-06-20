@@ -250,7 +250,8 @@ body{
 #featured{
     margin-top: 100px;
 }
-.featured{
+.featured, 
+.products{
     width: 100%;
     text-align: center;
     &__span{
@@ -280,7 +281,8 @@ body{
     }
 }
 
-.mugs{
+.mugs,
+.cups{
     margin-top: 100px;
     display: flex;
     gap: 20px;
@@ -314,5 +316,14 @@ body{
     }
     &__oldprice{
         text-decoration: line-through;
+        color: rgba(29, 31, 46, 0.4);
     }
+}
+#products{
+    margin-top: 100px;
+}
+
+.cups{
+    gap: 17px;
+    flex-wrap: wrap;
 }
