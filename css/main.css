@@ -245,12 +245,14 @@ body {
 }
 
 .featured,
-.products {
+.products,
+.offer {
   width: 100%;
   text-align: center;
 }
 .featured__span,
-.products__span {
+.products__span,
+.offer__span {
   display: inline-block;
   font-size: 12px;
   font-weight: 400;
@@ -262,7 +264,9 @@ body {
 }
 .featured__span::after, .featured__span::before,
 .products__span::after,
-.products__span::before {
+.products__span::before,
+.offer__span::after,
+.offer__span::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -271,11 +275,13 @@ body {
   top: 50%;
 }
 .featured__span::before,
-.products__span::before {
+.products__span::before,
+.offer__span::before {
   left: -45px;
 }
 .featured__span::after,
-.products__span::after {
+.products__span::after,
+.offer__span::after {
   right: -45px;
 }
 
@@ -327,4 +333,80 @@ body {
 .cups {
   gap: 17px;
   flex-wrap: wrap;
+}
+
+#offer {
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+
+.offers {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+.offers__images {
+  max-width: 460px;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+}
+.offers__images .img1 {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+.offers__images .img2 {
+  grid-column: 3;
+  grid-row: 1/span 1;
+}
+.offers__images .img3 {
+  grid-column: 3/span 1;
+  grid-row: 2/span 1;
+}
+
+.info {
+  padding-left: 60px;
+  width: 44%;
+  min-height: 273px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.info__span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: rgb(29, 31, 46);
+  text-transform: uppercase;
+}
+.info__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+}
+.info__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.info__shopping {
+  max-width: 173px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  padding: 9px 24px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgb(29, 31, 46);
+  border: 1px solid rgb(29, 31, 46);
+  transition: all 0.3s ease;
+}
+.info__shopping:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(29, 31, 46);
 }/*# sourceMappingURL=main.css.map */

@@ -251,7 +251,8 @@ body{
     margin-top: 100px;
 }
 .featured, 
-.products{
+.products, 
+.offer{
     width: 100%;
     text-align: center;
     &__span{
@@ -326,4 +327,79 @@ body{
 .cups{
     gap: 17px;
     flex-wrap: wrap;
+}
+
+#offer{
+    margin-top: 100px;
+    margin-bottom: 130px;
+}
+.offers{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    &__images{
+        max-width: 460px;
+        width: 100%;
+        display: grid;
+        gap: 20px;
+        & .img1{
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2 ;
+
+        }
+        & .img2{
+            grid-column: 3;
+            grid-row: 1 / span 1;
+        }
+        & .img3{
+            grid-column: 3 / span 1;
+            grid-row: 2 / span 1;
+        }
+    }
+}
+.info{
+    padding-left: 60px;
+    width: 44%;
+    min-height: 273px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    &__span{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 2px;
+        color: rgba(29, 31, 46, 1);
+        text-transform: uppercase;
+    }
+    &__title{
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 50px;        
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    &__shopping{
+        max-width: 173px;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 1);
+        padding: 9px 24px;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: rgba(29, 31, 46, 1);   
+        border: 1px solid rgba(29, 31, 46, 1);
+        transition: all .3s ease;
+        &:hover{
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(29, 31, 46, 1);
+        }     
+    }
 }
