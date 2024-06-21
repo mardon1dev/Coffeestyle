@@ -1,0 +1,81 @@
+#featured{
+    margin-top: 100px;
+}
+.featured, 
+.products, 
+.offer{
+    width: 100%;
+    text-align: center;
+    &__span{
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 2px;
+        color: rgba(29, 31, 46, 1);
+        text-transform: uppercase;
+        position: relative;
+        &::after, 
+        &::before{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            background-color: rgba(236, 236, 237, 1);
+            top: 50%;
+        }
+        &::before{
+            left: -45px;
+        }
+        &::after{
+            right: -45px;
+        }
+    }
+}
+
+.mugs,
+.cups{
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    &__cup{
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--img{
+            width: 100%;
+        }
+        &--name{
+            margin-top: 35px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            color: rgba(29, 31, 46, 1);            
+        }
+        &--price{
+            color: rgba(29, 31, 46, 0.7);
+            font-size: 16px;
+            line-height: 28px;            
+        }
+    }
+}
+.newprice{
+
+    &__price{
+        color: rgba(162, 95, 75, 1);
+        margin-right: 10px;
+    }
+    &__oldprice{
+        text-decoration: line-through;
+        color: rgba(29, 31, 46, 0.4);
+    }
+}
+#products{
+    margin-top: 100px;
+}
+
+.cups{
+    gap: 17px;
+    flex-wrap: wrap;
+}
