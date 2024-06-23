@@ -247,14 +247,16 @@ body {
 .featured,
 .products,
 .offer,
-.story {
+.story,
+.subscribe {
   width: 100%;
   text-align: center;
 }
 .featured__span,
 .products__span,
 .offer__span,
-.story__span {
+.story__span,
+.subscribe__span {
   display: inline-block;
   font-size: 12px;
   font-weight: 400;
@@ -270,7 +272,9 @@ body {
 .offer__span::after,
 .offer__span::before,
 .story__span::after,
-.story__span::before {
+.story__span::before,
+.subscribe__span::after,
+.subscribe__span::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -281,13 +285,15 @@ body {
 .featured__span::before,
 .products__span::before,
 .offer__span::before,
-.story__span::before {
+.story__span::before,
+.subscribe__span::before {
   left: -45px;
 }
 .featured__span::after,
 .products__span::after,
 .offer__span::after,
-.story__span::after {
+.story__span::after,
+.subscribe__span::after {
   right: -45px;
 }
 
@@ -469,4 +475,74 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: rgb(29, 31, 46);
+}
+
+#subscribe {
+  margin-top: 152px;
+  background-color: rgb(29, 31, 46);
+}
+
+.subscribe {
+  padding: 82.5px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+.subscribe__span {
+  color: rgb(255, 255, 255);
+}
+.subscribe__title {
+  margin-top: 15px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.form {
+  margin-top: 25px;
+  max-width: 489px;
+  display: flex;
+  gap: 10px;
+}
+.form__input {
+  padding: 18px 0;
+  width: 350px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  outline: none;
+  background-color: rgb(29, 31, 46);
+  border: 1px solid rgb(47, 48, 62);
+}
+.form__input::-moz-placeholder {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.form__input::placeholder {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.form__button {
+  padding: 18px 25px;
+  box-shadow: 0px 2px 6px 0px rgba(29, 31, 46, 0.1);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.form__button:hover {
+  border: 1px solid rgb(47, 48, 62);
+  background-color: rgb(29, 31, 46);
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=main.css.map */
