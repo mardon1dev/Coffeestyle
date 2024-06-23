@@ -1,0 +1,43 @@
+#story{
+    margin-top: 100px;
+}
+.story{
+    width: 100%;
+    text-align: center;
+}
+.stories{
+    padding-bottom: 48px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 102px;
+    &__info{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        &--title{
+            margin-top: 29px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            color: rgba(29, 31, 46, 1);
+        }
+        &--text{
+            margin-top: 14px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            color: rgba(29, 31, 46, 0.7);
+        }
+        &--span{
+            margin-top: 12px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(29, 31, 46, 1);            
+        }
+    }
+}

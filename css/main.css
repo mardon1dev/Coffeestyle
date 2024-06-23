@@ -246,13 +246,15 @@ body {
 
 .featured,
 .products,
-.offer {
+.offer,
+.story {
   width: 100%;
   text-align: center;
 }
 .featured__span,
 .products__span,
-.offer__span {
+.offer__span,
+.story__span {
   display: inline-block;
   font-size: 12px;
   font-weight: 400;
@@ -266,7 +268,9 @@ body {
 .products__span::after,
 .products__span::before,
 .offer__span::after,
-.offer__span::before {
+.offer__span::before,
+.story__span::after,
+.story__span::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -276,12 +280,14 @@ body {
 }
 .featured__span::before,
 .products__span::before,
-.offer__span::before {
+.offer__span::before,
+.story__span::before {
   left: -45px;
 }
 .featured__span::after,
 .products__span::after,
-.offer__span::after {
+.offer__span::after,
+.story__span::after {
   right: -45px;
 }
 
@@ -417,4 +423,50 @@ body {
   background-image: url("../../images/coffee-bg.jpg");
   background-position: no-repeat;
   background-size: cover;
+}
+
+#story {
+  margin-top: 100px;
+}
+
+.story {
+  width: 100%;
+  text-align: center;
+}
+
+.stories {
+  padding-bottom: 48px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 102px;
+}
+.stories__info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.stories__info--title {
+  margin-top: 29px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgb(29, 31, 46);
+}
+.stories__info--text {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(29, 31, 46, 0.7);
+}
+.stories__info--span {
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(29, 31, 46);
 }/*# sourceMappingURL=main.css.map */
